@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap');
+
+/* To modify the background */
+
+.containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px; 
+    background-color:aliceblue ;
+}
+
+/* To modify the carousel box */
+
+.carousel{
+    background: white;
+    padding: 0px 30px;
+    width: 50%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px #b1aeae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../img/OIP.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 90px;
+    background-position-y: 120px; */
+   
+}
+
+.contentbox{
+    display: flex;
+    /* position: absolute; */
+    /* top: -100;  */
+    /* margin-top: auto; */
+    /* top: 0!important; */
+    /* z-index: 1000; */
+    /* margin-top: -100px; */
+   
+
+}
+
+.content{
+    background-image:linear-gradient(to right, #051e36,#193149,#50759a);
+    width: 500px;
+    height: 70px;
+    padding-left:20px ; 
+    /* position: relative; */
+     margin-top: 15px;
+     /* border-radius-top-right: 10px; */
+     border-bottom-right-radius:10px ;
+     border-top-right-radius:10px ;
+     margin-bottom: 10px;
+    
+    }
+    
+.imbox img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    
+    }
+.contentbox h2{ 
+    color:rgb(217, 217, 224) !important;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 23px;
+    margin-top: 5px;
+    text-shadow: 2px 2px 5px rgb(177, 169, 204);
+    font-weight: 700;
+}
+
+.contentbox p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color:rgb(188, 190, 206)!important;
+}
+ 
+/* To remove the grey background color */
+
+.carousel-control{
+    background: transparent!important;
+}
+
+
+/* To modify the div that contains the p and h3 */
+
+  .carousel-caption{
+
+    position: relative!important;  
+    right: 0%!important;  
+    bottom: 0px!important;  
+    left: 0%!important;
+    top: 100!important;
+    
+} 
+.carousel-caption p{
+
+    color:black!important;
+    text-shadow: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0px 80px;
+    
+} 
+/* ///////////////////////////////////////////////////// */
+/* To put the image in the center */
+
+/* .imgbox{
+    text-align: center;
+} */
+
+/* To modify the image */
+
+/* .imgbox img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    object-fit: cover;
+
+} */
+/* ////////////////////////////////////////////// */
+
+
+/* To modify the small circles in the bottom */
+
+.carousel-indicators li{
+    background:#063d74;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators{
+    bottom: -4px;
+}
+
+.carousel-indicators li.active{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image:linear-gradient(to right, rgb(41, 43, 46),rgb(71, 71, 76),rgb(107, 110, 111),rgb(71, 71, 76),rgb(41, 43, 46));
+}
+
+@media (max-width:900px) {
+    .carousel{
+        width: 85%;
+    }
+    .carousel-caption p{
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .carousel-indicators li{
+       width: 10px;
+       height: 10px;
+       border-radius: 50%;
+    }
+    .carousel-indicators li.active{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+    .content{
+        width: 700px;
+    }
+}
+
+@media (max-width:500px){
+    .contentbox h2{
+        font-size: 17px;
+        padding-top: 5px;
+    }
+    .contentbox p{
+        font-size: 13px;
+        
+    }
+}
+
+@media (max-width:333px){
+    .carousel-caption p{
+        font-size: 12px;
+        padding: 0px!important;
+    }
+    .imbox img {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+    }
+        .content{
+            width: 400px;
+            height: 65px;
+          padding-left: 5px;
+        }
+        .contentbox h2{
+            font-size: 15px;
+        }
+        .contentbox p{
+            font-size: 10px;
+        }
+}
+
+@media (max-width:280px){
+    .contentbox p{
+        display: none;
+    }
+    .contentbox h2{
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
